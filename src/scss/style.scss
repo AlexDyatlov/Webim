@@ -6,7 +6,7 @@
 .header{
   text-transform: uppercase;
   background: #fff;
-  background: center/cover no-repeat;
+  background: center/cover no-repeat url('../images/bg.png');
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -421,5 +421,7 @@
 }
 // end footer
 
-
+.menu__btn{
+  display: none;
+}
 @import 'media';

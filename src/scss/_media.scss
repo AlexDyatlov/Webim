@@ -1,0 +1,245 @@
+@media (max-width: 1180px){
+  .footer{
+    &__inner{
+      flex-direction: column;
+    }
+    &__info{
+      order: 1;
+    }
+  }
+}
+@media (max-width: 1080px){
+  .header{
+    background-image: none;
+  }
+  .menu__list, .header__info{
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 120px;
+    margin-right: 0;
+    background: $bg-color;
+    z-index: 5;
+    li{
+      display: block;
+      & + li{
+        margin-left: 0;
+      }
+      &:first-child {
+        border-top: 1px solid $color-text;
+      }
+    }
+    a{
+      border-bottom: 1px solid $color-text;
+      display: block;
+      padding: 17px 0;
+      padding-left: 30px;  
+    }
+    &-registr{
+      margin-left: 0;
+    }
+  }
+  .header__info:first-child {
+    border-top: 1px solid $color-text;
+  }
+  .menu__list{
+    top: 240px;
+  }
+  .menu__btn{
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 130px;
+    &-line{
+      display: block;
+      background: #3fd6bc;
+      height: 5px;
+      width: 40px;
+      margin: 8px 0;
+    }
+  }
+  .contacts__inner{
+    flex-direction: column;
+  }
+  .contacts__col{
+    padding-left: 70px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px){
+  .header__info{
+    display: none;
+  }
+  .main__buttons{
+    flex-direction: column;
+    max-width: 100%;
+    a{
+      width: 100%;
+      &:first-child{
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .item__html{
+    max-width: 360px;
+  }
+  .application__item{
+    &-link{
+      max-width: 360px;
+    }
+    &-description{
+      max-width: 370px;
+    }
+  }
+  .capabilities__btn{
+    padding: 12px 15px;
+  }
+  .footer{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__contacts{
+      order: -1;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 550px){
+  .product__item{
+    width: 140px;
+    &-num{
+      font-size: 100px;
+    }
+    &-link{
+      padding-left: 0;
+      &::before{
+        left: 35px;
+        bottom: 70px;
+      }
+    }
+    & ~ .product__item{
+      margin-left: 62px;
+    }
+  }
+  .link-regist::before{
+    bottom: 45px;
+  }
+  .application__title,
+  .capabilities__title{
+    max-width: 310px;
+  }
+  .capabilities__btn{
+    width: 100%;
+    text-align: center;
+    &:nth-child(2){
+      margin: 20px 0 0 0;
+    }
+  }
+  .capabilities__item{
+    margin-left: 70px;
+    &-value::before{
+      background-position: 0 -700px;
+      width: 50px;
+      height: 50px;
+      top: -10px;
+      left: -70px;
+    }
+  }
+  .value-2::before{
+    background-position: 0 -50px;
+  }
+  .value-3::before{
+    background-position: 0 -100px;
+  }
+  .value-4::before{
+    background-position: 0 -150px;
+  }
+  .value-5::before{
+    background-position: 0 -200px;
+  }
+  .value-6::before{
+    background-position: 0 -250px;
+  }
+  .contacts__text{
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 460px){
+  .menu__btn{
+    margin-right: 30px;
+  }
+  .main__title{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .list-html__title{
+    max-width: 280px;
+  }
+  .item-link{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .item__html-description,
+  .application__item-description{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .application__title,
+  .capabilities__title{
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .capabilities__item{
+    font-size: 14px;
+    line-height: 22px;
+    &-value::before{
+      top: -12px;
+    }
+    span{
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .contacts__text{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .footer__contacts,
+  .footer__phons,
+  .footer__logo{
+    display: none;
+  }
+  .footer{
+    min-height: 165px;
+    &__info-copy{
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 360px){
+  .application__text,
+  .capabilities__text{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .capabilities__item{
+    font-size: 13px;
+    line-height: 20px;
+    span {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (min-width: 1081px){
+  .menu__list{
+    display: block !important;
+  }
+}
